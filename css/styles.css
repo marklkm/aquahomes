@@ -1,0 +1,454 @@
+
+
+/********************************************************************
+CSS FOR MAIN HTML ELEMENTS
+********************************************************************/
+
+html {
+    font-family: sans-serif;
+    line-height:1.15;
+    -ms-text-size-adjust:100%;
+    -webkit-text-size-adjust:100%;
+    -moz-osx-font-smoothing: grayscale; /* sourced from theguardian.com */
+    -webkit-font-smoothing: subpixel-antialiased; /* sourced theguardian.com */
+
+/********
+Reference: The font-smoothing 
+https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth
+font-smoothing - subpixel-antialiased - better text clarity for retina screens
+********/
+
+}
+
+body {
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #000;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  padding-top: 20px;
+  min-height: 45px;
+  border-bottom: #F2E74B 2px solid;
+}
+
+/* AQUAHOMES */
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#logo {
+  float: left;
+  color: #000;
+  text-transform: uppercase;
+}
+
+#logo h1 {
+  margin: 0;
+}
+
+/********************************************************************
+NAV MENU
+********************************************************************/
+
+nav {
+  float: right;
+  margin-top: 10px;
+}
+
+nav li {
+  float: left;
+  display: inline;
+  padding: 20px;
+}
+
+header .selected a {
+  color: #F2E74B;
+  border-top: 2px solid #fff;
+}
+
+header a:hover {
+  border-top: 2px solid #F2E74B;
+  color: #fff;
+}
+
+#intro {
+  min-height: 200px;
+  background-color: #000;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  border-bottom: #F2E74B 5px solid;
+}
+
+#intro h1 {
+  margin-top: 45px;
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #F29849;
+  /*text-decoration-line: underline;
+  text-decoration-color: #F2E74B;*/
+}
+
+#intro h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 1.75em;
+  color: #F29849;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.55em;
+  color: #F29849;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.25em;
+  color: #F29849;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1em;
+  color: #F29849;
+  font-weight: bold;
+}
+
+/********************************************************************
+LOGO
+********************************************************************/
+
+#logo > h3 {
+  font-size: 1.75em;
+  color: #F29849;
+  font-weight: bold;
+  margin: auto;
+}
+
+
+/********************************************************************
+CSS DIV CONTAINER - HELPS KEEP EVERYTHING CENTERED 
+********************************************************************/
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/********************************************************************
+HREF LINKS
+********************************************************************/
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a.link {
+  color: #F29849;
+}
+
+a:hover {
+  /* border-top: 2px solid #F2E74B; */
+  text-decoration: line-through #F29849;
+}
+
+/********************************************************************
+VIDEO - HOME PAGE
+********************************************************************/
+
+.video-center {
+  margin-left: auto;
+  margin-right: auto;
+  display: inline;
+  float: left;
+}
+
+/********************************************************************
+The min-height CSS descriptor specifies the minimum height of the viewport 
+of a document defined via the @ viewport at-rule.
+********************************************************************/
+
+#cols {
+  margin-top: 20px;
+}
+
+.col {
+  float: left;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+}
+
+.col2 {
+  float: left;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+}
+
+#cols .col img {
+  width: 100%;
+  height: auto;
+  margin-top: 5px;
+}
+
+img.home {
+  border-radius: 60px 45px 30px 15px/15px 30px 45px 60px;
+}
+
+img:hover {
+  opacity: 0.33;
+}
+
+/********************************************************************
+SIDEBAR - ASIDE - ARTICLE - FOOTER
+********************************************************************/
+
+
+aside#right-sidebar {
+  float: right;
+  width: 30%;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+#right-sidebar {
+  width: 90%;
+  padding: 5px;
+}
+
+/* HTML <article> tag specifies independent, self contained content */
+/* used for the video on index.html page to seperate it from other content */
+
+article#main-col {
+  float: left;
+  width: 60%;
+  display: block;
+}
+
+footer {
+  padding: 20px;
+  margin-top: 20px;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/********************************************************************
+RESONSIVE - CSS MEDIA QUERIES
+********************************************************************/
+
+@media(max-width: 768px) {
+  header #logo, h3,
+  header nav, .video_center,
+  header nav li,
+  #cols .col, .col,
+  article#main-col,
+  aside#right-sidebar{
+    float: none;
+    text-align: center;
+    width: 100%; 
+    padding: 2px;
+  }
+
+  img.home {
+    width: 175px;
+  }
+
+  img.gallery {
+    box-shadow: none;
+  }
+
+  header {
+    padding-bottom: 20px;
+  }
+
+  #intro h1 {
+    margin-top: 40px;
+  }
+
+  #intro h2 {
+    margin-top: 50px;
+  }
+
+  table {
+    width: 80%;
+    float: center;
+  }
+
+}
+
+/********************************************************************
+GALLERY  - BORDER RADIUS AND BOX SHADOW
+********************************************************************/
+
+.gallery {
+  border: 1px solid;
+  padding: 5px;
+  box-shadow: 1px 6px 14px #888888;
+}
+
+.gallery:hover {
+   border-radius: 60px 45px 30px 15px/15px 30px 45px 60px;
+   opacity: 1;
+}
+
+figcaption {
+  color: #F29849;
+  font-weight: bold;
+}
+
+/********************************************************************
+CONTACT PAGE - LIST ELEMENTS - ORDERED LIST
+********************************************************************/
+
+/* Ordered list on the about.html page */
+
+ol.hackathon {
+  list-style: none;
+  counter-reset: my-counter;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  float: center;
+}
+
+/* ol styling idea from https://css-tricks.com/custom-list-number-styling/ */
+
+ol.hackathon > li {
+  counter-increment: my-counter;
+  display: flex;
+  width: 50%;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+ol.hackathon > li::before {
+  content: "" counter(my-counter);
+  font-weight: bold;
+  font-size: 2rem;
+  margin-right: 0.5rem;
+  font-family: "Guardian Text Egyptian Web", Georgia;
+  line-height: 1;
+
+}
+
+/********************************************************************
+LIST ELEMENTS 
+********************************************************************/
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.contact-info a {
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+  color: #000;
+}
+
+.contact-info li.phone a {
+  background-image: url('../images/phone.png');
+  text-align: left;
+}
+
+.contact-info li.mail a {
+  background-image: url('../images/mail.png');
+  text-align: left;
+}
+
+.contact-info li.twitter a {
+  background-image: url('../images/twitter.png');
+  text-align: left;
+}
+
+.contact-info li.facebook a {
+  background-image: url('../images/facebook.png');
+  text-align: left;
+}
+
+
+/* unordered list on tangent.html page */
+
+ul.launchbox {
+  margin-bottom: 50px;
+  padding: 0;
+}
+
+ul.launchbox li {
+  padding: 10px;
+  margin: 0;
+  font-size: 1em;
+  text-align: left;
+  cursor: pointer;
+}
+
+/********************************************************************
+TANGENT PAGE - TABLE
+********************************************************************/
+
+
+table {
+  margin-bottom: 50px;
+  width: 80%;
+  border-collapse: collapse;
+  overflow: hidden;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+/* pseudo elements - can be 'last-child' or 'odd' or 'even' */
+
+tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+tr:hover {
+    background-color: #F29849;
+}
+
+th {
+    color: #fff;
+    background-color: #0D0D0D;
+}
+
+caption {
+  font-size: 1.25em;
+  color: #F29849;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
