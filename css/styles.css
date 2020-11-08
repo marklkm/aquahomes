@@ -269,8 +269,8 @@ RESONSIVE - CSS MEDIA QUERIES
   }
 
   header nav, header nav li {
-    font-size: 12px;
-    float: none;
+    font-size: 10px;
+    float: left;
     text-align: center;
   }
 
