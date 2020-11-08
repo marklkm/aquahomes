@@ -213,7 +213,7 @@ img.home {
 }
 
 img:hover {
-  opacity: 0.33;
+  opacity: 0.23;
 }
 
 /********************************************************************
@@ -270,11 +270,13 @@ RESONSIVE - CSS MEDIA QUERIES
   }
 
   img.home {
-    width: 175px;
+    width: 125px;
   }
 
   img.gallery {
     box-shadow: none;
+    width: 125px;
+    border: none;
   }
 
   header {
