@@ -104,6 +104,15 @@ header a:hover {
   text-transform: uppercase;
 }
 
+#intro_h1 {
+  margin-top: 45px;
+  font-size: 1em;
+  margin-bottom: 10px;
+  color: #F29849;
+  /*text-decoration-line: underline;
+  text-decoration-color: #F2E74B;*/
+}
+
 h1 {
   font-size: 1.75em;
   color: #F29849;
@@ -302,7 +311,7 @@ RESONSIVE - CSS MEDIA QUERIES
   p.contact_info {
     text-align: left;
     float: none;
-  }
+    }
 
 }
 
