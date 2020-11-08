@@ -258,7 +258,7 @@ RESONSIVE - CSS MEDIA QUERIES
 
 @media(max-width: 768px) {
   header #logo, h3,
-  header nav, .video_center,
+  .video_center,
   header nav li,
   #cols .col, .col,
   article#main-col,
@@ -267,6 +267,10 @@ RESONSIVE - CSS MEDIA QUERIES
     text-align: center;
     width: 100%; 
     padding: 2px;
+  }
+
+  header nav {
+    float: center;
   }
 
   img.home {
