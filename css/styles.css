@@ -277,6 +277,7 @@ RESONSIVE - CSS MEDIA QUERIES
     box-shadow: none;
     width: 125px;
     border-style: none;
+    border: none;
   }
 
   header {
