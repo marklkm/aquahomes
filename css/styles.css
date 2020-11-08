@@ -276,7 +276,7 @@ RESONSIVE - CSS MEDIA QUERIES
   img.gallery {
     box-shadow: none;
     width: 125px;
-    border: none;
+    border-style: none;
   }
 
   header {
