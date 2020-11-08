@@ -258,7 +258,7 @@ RESONSIVE - CSS MEDIA QUERIES
 
 @media(max-width: 768px) {
   header #logo, h3,
-  header nav, .video_center,
+  .video_center,
   #cols .col, .col,
   article#main-col,
   aside#right-sidebar{
@@ -268,9 +268,9 @@ RESONSIVE - CSS MEDIA QUERIES
     padding: 2px;
   }
 
-  header nav li {
+  header nav, header nav li {
     font-size: 12px;
-    float: center;
+    float: none;
     text-align: center;
   }
 
