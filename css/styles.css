@@ -287,6 +287,7 @@ RESONSIVE - CSS MEDIA QUERIES
 
   #intro h2 {
     margin-top: 30px;
+    font-size: 15px;
   }
 
   table {
