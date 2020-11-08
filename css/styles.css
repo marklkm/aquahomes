@@ -270,8 +270,8 @@ RESONSIVE - CSS MEDIA QUERIES
 
   header nav, header nav li {
     font-size: 10px;
-    float: left;
-    text-align: center;
+    float: none;
+    text-align: left;
   }
 
   img.home {
