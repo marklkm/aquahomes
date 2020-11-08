@@ -104,13 +104,6 @@ header a:hover {
   text-transform: uppercase;
 }
 
-h1#intro_h1 {
-  margin-top: 45px;
-  font-size: 1.25em;
-  color: #F29849;
-  /*text-decoration-line: underline;
-  text-decoration-color: #F2E74B;*/
-}
 
 h1 {
   font-size: 1.75em;
