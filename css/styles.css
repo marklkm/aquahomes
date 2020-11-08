@@ -128,6 +128,7 @@ h4 {
   font-weight: bold;
 }
 
+
 /********************************************************************
 LOGO
 ********************************************************************/
@@ -296,6 +297,11 @@ RESONSIVE - CSS MEDIA QUERIES
   table {
     width: 80%;
     float: center;
+  }
+
+  p.contact_info {
+    text-align: left;
+    float: none;
   }
 
 }
