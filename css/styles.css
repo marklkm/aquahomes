@@ -267,6 +267,7 @@ RESONSIVE - CSS MEDIA QUERIES
     text-align: center;
     width: 100%; 
     padding: 2px;
+    font-size: 15px;
   }
 
   img.home {
