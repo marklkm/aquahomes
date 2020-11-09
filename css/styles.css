@@ -99,7 +99,8 @@ header a:hover {
   margin-top: 45px;
   font-size: 2em;
   margin-bottom: 10px;
-  color: #F29849;
+  /*color: #F29849;*/
+  color: #ffffff;
   /*text-decoration-line: underline;
   text-decoration-color: #F2E74B;*/
 }
@@ -107,6 +108,7 @@ header a:hover {
 #intro h2 {
   font-size: .75em;
   text-transform: uppercase;
+  color: #ffffff;
 }
 
 
