@@ -83,7 +83,12 @@ header a:hover {
 
 #intro {
   min-height: 200px;
-  background-color: #000;
+  /*background-color: #000;*/
+  background-image: url("../images/dignity1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; 
   text-align: center;
   text-transform: uppercase;
   color: #fff;
